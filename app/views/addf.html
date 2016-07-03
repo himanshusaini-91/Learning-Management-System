@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../styles/custom.css">
+<script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../scripts/controllers/drop.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body ng-app="lms1">
+<div class="container">
+<div class="jumbotron">
+  <div class="table-responsive">
+
+  <h2>Add Features</h2>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Category</th>
+      <th>Features</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Category1</td>
+      <td>adduser</td>
+      <td><button type="button" class="btn btn-success">Add</button></td>
+    </tr>
+    <tr>
+      <td>Category2</td>
+      <td>addTeacher</td>
+      <td><button type="button" class="btn btn-success">Add</button></td>
+    </tr>
+    <tr>
+      <td>Category3</td>
+      <td>
+        <div ng-controller="Features">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <input type="text" ng-model="f1">
+            <span class="caret"></span>
+       </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li ng-repeat="a in subjects"><a ng-click="dropboxitemselected(a)">{{a}}</a></li>
+            </ul>
+            </div>
+            </div>
+
+
+      </td>
+</tr>
+          </tbody>
+      </table>
+</div>
+  </div>
+  </div>
+</body>
+</html>

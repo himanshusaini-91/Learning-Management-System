@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>Dashboard Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../styles/dashboard.css" rel="stylesheet">
+  <link href="../styles/custom.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <![endif]-->
+</head>
+
+<body ng-app="lms" ng-controller="dashctrl" class="b" >
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">LMS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html">Logout</a></li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+     <!-- <ul class="nav nav-sidebar">
+        <li ng-repeat="data in xy track by $index ">
+          <ul>
+            <li><a ng-href="#/add">{{data.rightname}}</a></li>//for routhing coming from database
+          </ul>
+        </li>
+      </ul>-->
+      <div ng-repeat="data in xy" >
+        <div ng-if="data.rightname == 'adduser' ">
+        <li><a ng-href="#/addUser">{{data.rightname}}</a></li>
+        </div>
+        <div ng-if="data.rightname == 'assigncourse'">
+          <li><a ng-href="#/assign">{{data.rightname}}</a></li>
+        </div>
+        <div ng-if="data.rightname == 'addcourse'">
+          <li><a ng-href="#/addCourse">{{data.rightname}}</a></li>
+        </div>
+        <div ng-if="data.rightname == 'coursecertification'">
+          <li><a ng-href="#/certificate">{{data.rightname}}</a></li>
+        </div>
+      </div>
+
+
+       <!-- <li><a ng-href="#/adduser">Adduser</a></li>
+        <li><a ng-href="#/addcourse">Add Course</a></li>
+        <li><a ng-href="#/assigncourse">Assign Course</a></li>
+        <li><a ng-href="#/coursecertificate">Course Certification</a></li>-->
+        <!--<li><a href="#">Reports</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Export</a></li>-->
+
+    </div>
+    <h1 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admin Dashboard</h1>
+    <div>
+    <ng-view></ng-view></div>
+
+      <div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/ngstorage/ngStorage.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../scripts/app.js"></script>
+<script src="../scripts/services/userfactory.js"></script>
+<script src="../scripts/controllers/users.js"></script>
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+
+</body>
+</html>
+

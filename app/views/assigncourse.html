@@ -1,0 +1,39 @@
+
+<hr>
+<div class="color1">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<div class="container">
+  <div class="row">
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspAssign Course </h1>
+    <br>
+    <br><form class="form-horizontal" name="course">
+    <div class="form-group">
+      <label for="inputEmail3" class="col-md-4 control-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teacher Id</label>
+      <div class="col-sm-5">
+        <input type="text" name="c2" class="form-control" id="inputEmail3" placeholder="Name" ng-model="teacherid">
+        <span ng-show="course.c2.$invalid && !course.s1.$pristine && course.s1.$dirty" class="help-block">Enter a valid email.</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inpu" class="col-sm-4 control-label">Course Name</label>
+      <div class="col-sm-5">
+        <input type="text" name="id"class="form-control" id="inpu" placeholder="CourseName" ng-model="coursename">
+        <span ng-show="adduser.id.$invalid && !userForm.id.$pristine && userForm.id.$dirty" class="help-block">Enter a valid email.</span>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="form-group">
+      <div class="col-sm-offset-5 col-sm-10">
+        <button type="submit" class="btn btn-primary" ng-click="assign()">Assign Course</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit" class="btn btn-danger"ng-click="cancel()">Cancel</button>
+
+
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+</div>
+<hr>

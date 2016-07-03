@@ -1,0 +1,31 @@
+.modal
+{
+  overflow: auto;
+}
+.jumbotron
+
+{
+  background-color:white;
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width:700px;
+  height:500px;
+  margin-top:5%;
+  margin-left: 15%;
+
+}
+.color
+{
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(6%, rgba(255,204,20,1)), color-stop(41%, rgba(160,175,60,1)), color-stop(100%, rgba(0,128,128,1)));
+}
+
+.b{
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(14%, rgba(253,255,153,1)), color-stop(41%, rgba(173,215,145,1)), color-stop(100%, rgba(0,128,128,1)));
+}
+.color1{
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(204,255,218,1)), color-stop(18%, rgba(204,255,218,1)), color-stop(100%, rgba(0,128,128,1)));
+}
+.color2
+{
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,120,120,1)), color-stop(100%, rgba(0,128,128,1)));
+}

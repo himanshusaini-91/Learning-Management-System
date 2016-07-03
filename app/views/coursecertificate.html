@@ -1,0 +1,44 @@
+<hr>
+<div class="color2">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<div class="container">
+  <div class="row">
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp Course Certification </h1>
+    <br>
+    <br><form class="form-horizontal" name="course">
+    <div class="form-group">
+      <label for="inputEmail3" class="col-md-4 control-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student Name</label>
+      <div class="col-sm-5">
+        <input type="text" name="c3" class="form-control" id="inputEmail3" placeholder="Name" ng-model="sname">
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inpu" class="col-sm-4 control-label">Course Name</label>
+      <div class="col-sm-5">
+        <input type="name" name="id"class="form-control" id="inpu" placeholder="CourseName" ng-model="coursename">
+        <span ng-show="course.id.$invalid && !userForm.id.$pristine && userForm.id.$dirty" class="help-block">Enter a require field.</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inp" class="col-sm-4 control-label">Duration</label>
+      <div class="col-sm-5">
+        <input type="name" name="id"class="form-control" id="inp" placeholder="Duration" ng-model="duration">
+        <span ng-show="course.id.$invalid && !userForm.id.$pristine && userForm.id.$dirty" class="help-block">Enter a require field.</span>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="form-group">
+      <div class="col-sm-offset-5 col-sm-10">
+        <button type="submit" ng-click="show()" class="btn btn-primary">Submit</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" ng-click="cancel()"class="btn btn-danger">Cancel</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+</div>
+<hr>
+
